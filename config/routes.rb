@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :reads
   get 'welcome/index'
   resources :books
 
