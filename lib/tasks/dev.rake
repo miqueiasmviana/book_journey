@@ -18,14 +18,14 @@ namespace :dev do
     show_spinner("cadastrando livros") do
       books = [
         {
-          cover: "https://m.media-amazon.com/images/I/91ChBc9IxGL._AC_UF1000,1000_QL80_.jpg",
-          title: "Redescobrindo os pais da igreja",
-          author: "Michael A. G. Haykin",
-          description:"No livro Redescobrindo os Pais da Igreja, Michael Haykin oferece ao leitor uma introdução agradável do cristianismo nos seus primeiros séculos, através das histórias de vida dos pais da Igreja e de seus ensinos, como Inácio, Cipriano, Basílio de Cesaréia e Ambrósio, cujos legados representam um imenso valor para os cristãos hoje. Nesta obra, Haykin revela o posicionamento desses homens piedosos diante de questões importantes da teologia como o batismo, o martírio, a ceia do Senhor, a Trindade, a relação da igreja com o estado, entre outras.",
+          cover: "https://m.media-amazon.com/images/I/71wKA7eCpnL._AC_UF1000,1000_QL80_.jpg",
+          title: "The Musician's Way: A Guide to Practice, Performance, and Wellness",
+          author: "Gerald Klickstein",
+          description:"In The Musician's Way, veteran performer and educator Gerald Klickstein combines the latest research with his 30 years of professional experience to provide aspiring musicians with a roadmap to artistic excellence. Part I, Artful Practice, describes strategies to interpret and memorize compositions, fuel motivation, collaborate, and more. Part II, Fearless Performance, lifts the lid on the hidden causes of nervousness and shows how musicians can become confident performers. Part III, Lifelong Creativity, surveys tactics to prevent music-related injuries and equips musicians to tap their own innate creativity. Written in a conversational style, The Musician's Way presents an inclusive system for all instrumentalists and vocalists to advance their musical abilities and succeed as performing artists.",
           genre: "Teologia",
-          publish_company: "Editora Fiel",
-          page: "196",
-          year_publish: "2011",
+          publish_company: "Oxford university Press",
+          page: "343",
+          year_publish: "2009",
           book_current: BookCurrent.all.sample
           },
  

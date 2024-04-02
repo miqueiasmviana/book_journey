@@ -1,9 +1,13 @@
 <div>
   <h1 class="font-bold text-4xl">Seja Bem-Vindo</h1>
   <p>
-
-  <%= link_to books_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
-    My Books
-  <% end %>
+    <%= link_to books_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
+      My Books
+    <% end %>
+  </p>
+  <p>
+    <%= link_to book_currents_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
+      Status
+    <% end %>
   </p>
 </div>
