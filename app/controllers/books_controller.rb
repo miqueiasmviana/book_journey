@@ -9,6 +9,7 @@ class BooksController < ApplicationController
 
   # GET /books/1 or /books/1.json
   def show
+    @book = Book.find(params[:id])   
   end
 
   def set_book
@@ -23,7 +24,7 @@ class BooksController < ApplicationController
   # GET /books/1/edit
   def edit
   end
-
+  
   # POST /books or /books.json
   def create
     @book = Book.new(book_params)
