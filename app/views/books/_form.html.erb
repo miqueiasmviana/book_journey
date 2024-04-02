@@ -51,6 +51,11 @@
     <%= form.number_field :year_publish, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
+  <div class="field px-3 py-3">
+    <%= form.label :book_current_id %>
+    <%= form.select("book_current_id", @book_current_options, {include_blank: t("messages.select") }) %>
+  </div>
+
   <div class="inline">
     <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
   </div>

@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: %i[ show edit update destroy ]
+  before_action :set_book_current_options, only: [:new, :create, :edit, :update]
 
   # GET /books or /books.json
   def index
@@ -8,6 +9,10 @@ class BooksController < ApplicationController
 
   # GET /books/1 or /books/1.json
   def show
+  end
+
+  def set_book
+    @book = Book.find(params[:id])
   end
 
   # GET /books/new
@@ -59,7 +64,9 @@ class BooksController < ApplicationController
 
   private
 
-
+    def set_book_current_options
+      @book_current_options = BookCurrent.all.pluck(:current_type, :id)
+    end
 
     # Only allow a list of trusted parameters through.
     def book_params
