@@ -5,9 +5,8 @@ namespace :dev do
       show_spinner("Apagando BD...") { %x(rails db:drop) }
       show_spinner("Criando BD...") { %x(rails db:create) }
       show_spinner("Migrando BD...") { %x(rails db:migrate) }
+      %x(rails dev:add_book_currents)
       %x(rails dev:add_books)
- 
- 
     else
       puts "Você não está em ambiente de desenvolvimento!"
     end
@@ -26,7 +25,8 @@ namespace :dev do
           genre: "Teologia",
           publish_company: "Editora Fiel",
           page: "196",
-          year_publish: "2011"
+          year_publish: "2011",
+          book_current: BookCurrent.all.sample
           },
  
  
@@ -38,7 +38,8 @@ namespace :dev do
           genre: "Fantasia",
           publish_company: "Rocco",
           page: "208",
-          year_publish: "2011"
+          year_publish: "2011",
+          book_current: BookCurrent.all.sample
           },
  
  
@@ -55,7 +56,8 @@ namespace :dev do
           genre: "Fantasia",
           publish_company: "WMF Martins Fontes",
           page: "328",
-          year_publish: "2013"
+          year_publish: "2013",
+          book_current: BookCurrent.all.sample
           },
  
  
@@ -80,7 +82,8 @@ namespace :dev do
           genre: "Fantasia",
           publish_company: "Arqueiro",
           page: "656",
-          year_publish: "2007"
+          year_publish: "2007",
+          book_current: BookCurrent.all.sample
           },
  
  
@@ -92,7 +95,8 @@ namespace :dev do
           genre: "Arte",
           publish_company: "Perspectiva",
           page: "162",
-          year_publish: "1997"
+          year_publish: "1997",
+          book_current: BookCurrent.all.sample
           }
           ]
      
@@ -101,10 +105,24 @@ namespace :dev do
       end
     end
   end
+
  
     private
  
- 
+  desc "Cadastra status"
+  task add_book_currents: :environment do
+    show_spinner("Cadastrando Status") do
+      book_currents = [
+        {current_type: "Want to Read"},
+        {current_type: "Current Reading"},
+        {current_type: "Finished"}
+      ]
+      book_currents.each do |book_current|
+        BookCurrent.find_or_create_by!(book_current)
+      end
+    end
+  end
+
   def show_spinner(msg_start, msg_end = "Concluído!", &block)
     spinner = TTY::Spinner.new("[:spinner] #{msg_start}")
     spinner.auto_spin
