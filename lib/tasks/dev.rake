@@ -5,7 +5,7 @@ namespace :dev do
       show_spinner("Apagando BD...") { %x(rails db:drop) }
       show_spinner("Criando BD...") { %x(rails db:create) }
       show_spinner("Migrando BD...") { %x(rails db:migrate) }
-      %x(rails dev:add_reads)
+      %x(rails dev:add_book_currents)
       %x(rails dev:add_books)
  
  
@@ -103,20 +103,20 @@ namespace :dev do
     end
   end
 
-  desc "Cadastra os status disponíveis"
-   task add_reads: :environment do
-    show_spinner("cadastrando status") do
-      books = [
-        { stating_type: "Want to Read" },
-        { stating_type: "Current Reading"},
-        { stating_type: "Finished"}
-        ]
-      
-        reads.each do |read|
-          Book.find_or_create_by!(read)
-        end
+  desc "Cadastra os status"
+   task add_book_currents: :environment do
+    show_spinner("Cadastrando status") do
+      book_currents = [
+        {current_type: "Want to Read"},
+        {current_type: "Current Reading"},
+        {current_type: "Finished"}
+      ]
+
+      book_currents.each do |book_current|
+        BookCurrent.find_or_create_by!(book_current)
       end
     end
+  end
  
     private
  
