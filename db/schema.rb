@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_01_233359) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_02_130120) do
+  create_table "book_currents", force: :cascade do |t|
+    t.string "current_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "books", force: :cascade do |t|
     t.string "cover"
     t.string "title"
@@ -20,12 +26,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_01_233359) do
     t.string "publish_company"
     t.integer "page"
     t.integer "year_publish"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "reads", force: :cascade do |t|
-    t.string "stating_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
