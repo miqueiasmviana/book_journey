@@ -15,4 +15,14 @@
       Want to Read
     <% end %>
   </p>
+  <p>
+    <%= link_to finished_book_index_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
+      Finished
+    <% end %>
+  </p>
+  <p>
+    <%= link_to current_read_index_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
+      Current Reading
+    <% end %>
+  </p>
 </div>

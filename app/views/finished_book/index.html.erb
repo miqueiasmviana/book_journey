@@ -1,4 +1,15 @@
-<div>
-  <h1 class="font-bold text-4xl">FinishedBook#index</h1>
-  <p>Find me in app/views/finished_book/index.html.erb</p>
+<div class="bg-white mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-2xl lg:mx-0">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Finished Books</h2>
+    <p class="mt-2 text-lg leading-8 text-gray-600">List of Books You Finished Reading</p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4 mt-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+    <% @finished_books.each do |finished_book| %>
+      <div class="flex flex-col items-center"> 
+        <%= image_tag finished_book.cover, size: "50x50", class: "block w-32 mx-auto mb-2" %> 
+        <p class="text-sm text-center text-gray-800"><%= finished_book.title %></p>
+      </div>
+    <% end %>
+  </div>
 </div>
