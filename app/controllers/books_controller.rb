@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: %i[ show edit update destroy ]
-
+  before_action :set_book_current_options, only: [:new, :create, :edit, :update]
   # GET /books or /books.json
   def index
     @books = Book.all
@@ -58,6 +58,10 @@ class BooksController < ApplicationController
   end
 
   private
+
+    def set_book_current_options
+      @book_current_options = BookCurrent.all.pluck(:current, :id)
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_book
       @book = Book.find(params[:id])
