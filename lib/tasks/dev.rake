@@ -86,7 +86,66 @@ namespace :dev do
           book_current: BookCurrent.all.sample
           },
  
- 
+          {
+          cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1311904217i/12190559.jpg",
+          title: "Para compreender as músicas de hoje",
+          author: "",
+          description:"Na luta das idéias novas, pouco importa saber quem tem razão e quem não tem. Saber-se-á mais tarde... se se souber... e tanto pior! A posteridade não é mais clarividente que os contemporâneos...” pensa Henry Barraud, um dos mais eminentes músicos de sua geração, cujos programas na Rádio Televisão Francesa conquistou em toda Europa audiências de massa. Neste livro que a Editora Perspectiva reedita por insistentes solicitações de professores, musicólogos, alunos e interessados na iniciação e pedagogia da música moderna, Barraud introduz o leitor nos diversos registros da criação de nosso tempo, detendo-se particularmente naqueles que parecem, à primeira vista, inacessíveis à compreensão do receptor tradicional, por causa de suas inovações estéticas e técnicas. Acompanha esta nova edição um CD",
+          genre: "Arte",
+          publish_company: "Perspectiva",
+          page: "162",
+          year_publish: "1997",
+          book_current: BookCurrent.all.sample
+          },
+
+          {
+          cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1311904217i/12190559.jpg",
+          title: "Para compreender as músicas de hoje",
+          author: "",
+          description:"Na luta das idéias novas, pouco importa saber quem tem razão e quem não tem. Saber-se-á mais tarde... se se souber... e tanto pior! A posteridade não é mais clarividente que os contemporâneos...” pensa Henry Barraud, um dos mais eminentes músicos de sua geração, cujos programas na Rádio Televisão Francesa conquistou em toda Europa audiências de massa. Neste livro que a Editora Perspectiva reedita por insistentes solicitações de professores, musicólogos, alunos e interessados na iniciação e pedagogia da música moderna, Barraud introduz o leitor nos diversos registros da criação de nosso tempo, detendo-se particularmente naqueles que parecem, à primeira vista, inacessíveis à compreensão do receptor tradicional, por causa de suas inovações estéticas e técnicas. Acompanha esta nova edição um CD",
+          genre: "Arte",
+          publish_company: "Perspectiva",
+          page: "162",
+          year_publish: "1997",
+          book_current: BookCurrent.all.sample
+          },
+
+          {
+          cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1311904217i/12190559.jpg",
+          title: "Para compreender as músicas de hoje",
+          author: "",
+          description:"Na luta das idéias novas, pouco importa saber quem tem razão e quem não tem. Saber-se-á mais tarde... se se souber... e tanto pior! A posteridade não é mais clarividente que os contemporâneos...” pensa Henry Barraud, um dos mais eminentes músicos de sua geração, cujos programas na Rádio Televisão Francesa conquistou em toda Europa audiências de massa. Neste livro que a Editora Perspectiva reedita por insistentes solicitações de professores, musicólogos, alunos e interessados na iniciação e pedagogia da música moderna, Barraud introduz o leitor nos diversos registros da criação de nosso tempo, detendo-se particularmente naqueles que parecem, à primeira vista, inacessíveis à compreensão do receptor tradicional, por causa de suas inovações estéticas e técnicas. Acompanha esta nova edição um CD",
+          genre: "Arte",
+          publish_company: "Perspectiva",
+          page: "162",
+          year_publish: "1997",
+          book_current: BookCurrent.all.sample
+          },
+
+          {
+          cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1311904217i/12190559.jpg",
+          title: "Para compreender as músicas de hoje",
+          author: "",
+          description:"Na luta das idéias novas, pouco importa saber quem tem razão e quem não tem. Saber-se-á mais tarde... se se souber... e tanto pior! A posteridade não é mais clarividente que os contemporâneos...” pensa Henry Barraud, um dos mais eminentes músicos de sua geração, cujos programas na Rádio Televisão Francesa conquistou em toda Europa audiências de massa. Neste livro que a Editora Perspectiva reedita por insistentes solicitações de professores, musicólogos, alunos e interessados na iniciação e pedagogia da música moderna, Barraud introduz o leitor nos diversos registros da criação de nosso tempo, detendo-se particularmente naqueles que parecem, à primeira vista, inacessíveis à compreensão do receptor tradicional, por causa de suas inovações estéticas e técnicas. Acompanha esta nova edição um CD",
+          genre: "Arte",
+          publish_company: "Perspectiva",
+          page: "162",
+          year_publish: "1997",
+          book_current: BookCurrent.all.sample
+          },
+
+          {
+          cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1311904217i/12190559.jpg",
+          title: "Para compreender as músicas de hoje",
+          author: "",
+          description:"Na luta das idéias novas, pouco importa saber quem tem razão e quem não tem. Saber-se-á mais tarde... se se souber... e tanto pior! A posteridade não é mais clarividente que os contemporâneos...” pensa Henry Barraud, um dos mais eminentes músicos de sua geração, cujos programas na Rádio Televisão Francesa conquistou em toda Europa audiências de massa. Neste livro que a Editora Perspectiva reedita por insistentes solicitações de professores, musicólogos, alunos e interessados na iniciação e pedagogia da música moderna, Barraud introduz o leitor nos diversos registros da criação de nosso tempo, detendo-se particularmente naqueles que parecem, à primeira vista, inacessíveis à compreensão do receptor tradicional, por causa de suas inovações estéticas e técnicas. Acompanha esta nova edição um CD",
+          genre: "Arte",
+          publish_company: "Perspectiva",
+          page: "162",
+          year_publish: "1997",
+          book_current: BookCurrent.all.sample
+          },
+
           {
           cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1311904217i/12190559.jpg",
           title: "Para compreender as músicas de hoje",
