@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   get 'current_read/index'
   get 'finished_book/index'
   get 'wantread/index'
-  resources :book_currents
   get 'welcome/index'
+  resources :book_currents
   resources :books
 
   root "welcome#index"
