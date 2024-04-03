@@ -83,6 +83,7 @@ GEM
     bootsnap (1.18.3)
       msgpack (~> 1.2)
     builder (3.2.4)
+    byebug (11.1.3)
     capybara (3.40.0)
       addressable
       matrix
@@ -241,6 +242,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  byebug (~> 11.1)
   capybara
   debug
   importmap-rails
@@ -261,4 +263,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.1
+   2.5.7
