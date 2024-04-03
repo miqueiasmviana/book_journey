@@ -1,28 +1,32 @@
-<div>
-  <h1 class="font-bold text-4xl">Seja Bem-Vindo</h1>
-  <p>
-    <%= link_to books_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
-      My Books
-    <% end %>
-  </p>
-  <p>
-    <%= link_to book_currents_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
-      Status
-    <% end %>
-  </p>
-  <p>
-    <%= link_to wantread_index_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
-      Want to Read
-    <% end %>
-  </p>
-  <p>
-    <%= link_to finished_book_index_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
-      Finished
-    <% end %>
-  </p>
-  <p>
-    <%= link_to current_read_index_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
-      Current Reading
-    <% end %>
-  </p>
+<div class="bg-white mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-2xl lg:mx-0">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Want to Read</h2>
+    <p class="mt-2 text-lg leading-8 text-gray-600">List of Books you want to read</p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4 mt-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+    <div class="flex flex-col items-center"> 
+      <p class="text-sm text-center text-gray-800">
+        <%= link_to wantread_index_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
+          Want to Read
+        <% end %>
+      </p>
+    </div>
+
+    <div class="flex flex-col items-center"> 
+      <p>
+        <%= link_to current_read_index_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
+          Current Reading
+        <% end %>
+      </p>
+    </div>
+
+    <div class="flex flex-col items-center"> 
+      <p>
+        <%= link_to finished_book_index_path, class: "text-sm text-blue-500 font-light px-2 py-4 whitespace-pre-wrap hover:text-blue-800" do %>
+          Finished
+        <% end %>
+      </p>
+    </div>
+  </div>
 </div>
