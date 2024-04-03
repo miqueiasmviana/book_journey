@@ -45,14 +45,16 @@
                   BookJourney
                 <% end %>
                 <%= link_to books_path, class: "text-gray-300 hover:white-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" do %>
-                  My Books
+                <%= t("links.my_book") %>
                 <% end %>
-                <%= link_to root_path(locale: 'pt-BR'), class: "text-gray-300 hover:white-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" do %>
+
+                <%= link_to root_path(locale: 'pt-BR', url: request.original_url), class: "text-gray-300 hover:white-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" do %>
                   Português
                 <% end %>
-                <%= link_to root_path(locale: 'en'), class: "text-gray-300 hover:white-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" do %>
+                <%= link_to root_path(locale: 'en', url: request.original_url), class: "text-gray-300 hover:white-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" do %>
                   English
                 <% end %>
+
               </div>
             </div>
           </div>

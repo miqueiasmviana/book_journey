@@ -6,50 +6,50 @@
 
 
  <p class="my-5">
-   <strong class="block font-medium mb-1">Title:</strong>
+   <strong class="block font-medium mb-1"><%= t("messages.title") %>:</strong>
    <%= book.title %>
  </p>
 
 
  <p class="my-5">
-   <strong class="block font-medium mb-1">Author:</strong>
+   <strong class="block font-medium mb-1"><%= t("messages.author") %>:</strong>
    <%= book.author %>
  </p>
 
 
  <p class="my-5">
-   <strong class="block font-medium mb-1">Description:</strong>
+   <strong class="block font-medium mb-1"><%= t("messages.description") %>:</strong>
    <%= book.description %>
  </p>
 
 
  <p class="my-5">
-   <strong class="block font-medium mb-1">Genre:</strong>
+   <strong class="block font-medium mb-1"><%= t("messages.genre") %>:</strong>
    <%= book.genre %>
  </p>
 
 
  <p class="my-5">
-   <strong class="block font-medium mb-1">Publish company:</strong>
+   <strong class="block font-medium mb-1"><%= t("messages.publish_company") %>:</strong>
    <%= book.publish_company %>
  </p>
 
 
  <p class="my-5">
-   <strong class="block font-medium mb-1">Page:</strong>
+   <strong class="block font-medium mb-1"><%= t("messages.page") %>:</strong>
    <%= book.page %>
  </p>
 
 
  <p class="my-5">
-   <strong class="block font-medium mb-1">Year publish:</strong>
+   <strong class="block font-medium mb-1"><%= t("messages.publish_year") %>:</strong>
    <%= book.year_publish %>
  </p>
 
 
  <% if action_name != "show" %>
-   <%= link_to "Show this book", book, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-   <%= link_to "Edit this book", edit_book_path(book), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+   <%= link_to t("messages.show"), book, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+   <%= link_to t("messages.edit"), edit_book_path(book), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
    <hr class="mt-6">
  <% end %>
 </div>
@@ -59,8 +59,8 @@
 
 <div id="<%= dom_id book %>">
   <% if action_name != "show" %>
-    <%= link_to "Show this book", book, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Edit this book", edit_book_path(book), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to t("messages.show"), book, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to t("messages.edit"), edit_book_path(book), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
 </div>
