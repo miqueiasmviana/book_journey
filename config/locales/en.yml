@@ -56,6 +56,7 @@ en:
     new: New
     back: Back
     my_book: My Books
+    new_book: New Book
   new:
     book: "New Book"
     book_current: "New Book Current"
